@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+  }
+
+.container{
+    width: 100%;
+    min-height: 1000px;
+    background-image: url('../../../assets/Images/1606_m00_i125_n007_S_c12_150566579_Earth_globe_world_map_of_dots.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 2s;
+    
+    
+    
+    
+}
+.mapimg{
+  border-radius: 16px;
+  animation-name: map;
+  animation-duration: 2s;
+  position: relative;
+  left:572px ;
+  top: 200px;
+  z-index: 100;  
+}
+.containerr{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flagimg{
+  width: 50%;
+  box-shadow: 5px 10px 20px rgb(43, 42, 42);
+  
+}
+
+
+
+.information{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 35px;
+}
+.items{
+  padding: 35px;
+}
+
+
+
+
+
+
+
+@keyframes map {
+    from {left: -2000px;top: 220px;}
+    to {left: 572px;top: 220px;}
+  }
+
+  @keyframes fade{
+    0%{filter: blur(0px);}
+    100%{filter: blur(7px);}
+  }

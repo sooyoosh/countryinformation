@@ -1,0 +1,54 @@
+body,html{
+  height: 100%;
+}
+
+
+
+
+
+/* body, html {
+    height: 100%;
+  }
+
+.container{
+    width: 100%;
+    min-height: 1000px;
+    background-image: url('../assets/Images/p_earth.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 2s;
+    
+    
+    
+    
+}
+.mapimg{
+  border-radius: 16px;
+  animation-name: map;
+  animation-duration: 2s;
+  position: relative;
+  left:572px ;
+  top: 200px;
+  z-index: 100;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes map {
+    from {left: -2000px;top: 220px;}
+    to {left: 572px;top: 220px;}
+  }
+
+  @keyframes fade{
+    0%{filter: blur(0px);}
+    100%{filter: blur(7px);}
+  } */

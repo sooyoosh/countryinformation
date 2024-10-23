@@ -1,0 +1,143 @@
+<div class="container">
+    <!-- <p-calendar 
+    [(ngModel)]="date" 
+    dateFormat="dd.mm.yy" 
+    (onSelect)="select($event)"/> -->
+
+
+    <!-- <input type="text" [ngModel]="man"> -->
+
+
+
+    <div>
+        <img src="../assets/Images/xhcz820tukh91.jpg" alt="" usemap="#mymap" class="mapimg">
+    </div>
+
+
+    <map name="mymap">
+        <area shape="poly"
+            coords="700,2,552,1,519,77,486,147,473,211,475,265,516,284,552,343,585,322,632,322,665,332,679,454,700,455"
+            alt="Russia" (click)="FindCountry('russia')">
+        <area shape="poly"
+            coords="424,29,431,23,441,29,459,26,483,30,502,33,513,41,509,65,488,74,452,70,480,86,492,109,478,144,470,202,414,225,397,215,386,174,407,131,398,112,385,86,365,65,361,55,372,62,389,60,391,49,393,38,402,30,414,45"
+            alt="Russia" (click)="FindCountry('finland')">
+        <area shape="poly"
+            coords="403,13,390,13,382,31,376,16,363,30,358,38,340,45,332,60,319,72,326,81,319,90,307,121,304,138,294,147,285,170,259,186,240,201,241,235,241,263,263,279,274,274,290,258,294,249,297,259,309,285,318,312,330,326,340,324,355,311,360,288,374,248,360,263,354,247,366,243,378,236,362,223,356,199,359,178,370,163,383,144,380,124,397,114,385,89,371,69,360,60,364,55,374,63,381,60,388,61,391,39,402,31,412,35,414,46,419,34,421,27,408,24,414,22,410,15,417,16"
+            alt="Russia" (click)="FindCountry('sweden')">
+        <area shape="poly"
+            coords="467,223,447,225,425,237,432,254,437,254,440,276,422,268,413,273,409,292,415,311,433,319,445,333,455,336,469,328,470,314,477,302,478,292,486,283,474,266,466,243"
+            alt="Russia" (click)="FindCountry('latvia')">
+        <area shape="poly"
+            coords="449,337,459,335,465,325,471,326,469,313,477,305,474,296,488,284,502,282,502,288,517,283,522,296,534,308,542,317,549,313,550,321,546,342,536,351,527,355,517,348,506,350,491,349,474,344,466,347,454,348,449,342"
+            alt="Russia" (click)="FindCountry('belarus')">
+
+    </map>
+
+
+    <p-dialog header="Country Information" [modal]="true" [(visible)]="visible" [style]="{ width: '40rem' }">
+        <div class="containerr">
+            <p style="margin-bottom: 20px;">Here is Information About Your Country</p>
+
+            <!-- information -->
+            <img src={{flags.png}} alt="flag" class="flagimg">
+            <div class="information">
+                <div class="items">
+                    <i class="pi pi-flag-fill" style="font-size: 1.5rem"></i>
+                    <br>
+                    <span>borders</span>
+                    <br>
+                    <br>
+                    <div *ngFor="let border of borders">
+
+                        <p>{{border}}</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <i class="pi pi-globe" style="font-size: 1.5rem"></i>
+                    <br>
+                    <span>continents</span>
+                    <br>
+                    <br>
+                    <p>{{alldata.continents[0]}}</p>
+                </div>
+                <div class="items">
+                    <i class="pi pi-home" style="font-size: 1.5rem"></i>
+                    <br>
+                    <span>capital</span>
+                    <br>
+                    <br>
+                    <p>{{alldata.capital[0]}}</p>
+                </div>
+                <div class="items">
+                    <mat-icon >sports_soccer</mat-icon>
+                    <br>
+                    <span>fifa</span>
+                    <br>
+                    <br>
+                    <div>
+
+                        <p>{{fifa}}</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <mat-icon >badge</mat-icon>
+                    <br>
+                    <span>name</span>
+                    <br>
+                    <br>
+                    <div>
+
+                        <p>{{fifa}}</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <mat-icon >south_america</mat-icon>
+                    <br>
+                    <span>region</span>
+                    <br>
+                    <br>
+                    <div>
+
+                        <p>{{region}}</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- information -->
+
+            <!-- <div class="flex justify-content-end gap-2"> -->
+            <!-- <p-button label="Back" severity="secondary" (onClick)="visible = false" /> -->
+
+
+
+        </div>
+
+    </p-dialog>
+
+
+
+
+
+
+
+
+
+
+</div>
